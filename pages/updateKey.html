@@ -7,7 +7,7 @@
     <link rel="icon" href="/resources/icons/color_favicon.png" sizes="32x32" type="image/png">
     <!--Hojas de estilos-->
     <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="addCar.css">
+    <link rel="stylesheet" href="updateKey.css">
     <!--Iconos-->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 
@@ -29,6 +29,73 @@
     </header>
     <main class="main__content">
         <img src="/resources/images/sion_logo.svg" alt="sion logo" class="main__logo">
+        <form action="" class="form__container">
+            <div class="parent">
+                <div class="div1 input__group">
+                    <label for="brand">Marca</label>
+                    <input class="input" type="text" name="brand" id="brand" required placeholder="...">
+                </div>
+                <div class="div2 input__group">
+                    <label for="year">Año</label>
+                    <input class="input" type="number" name="year" id="year" required placeholder="...">
+                </div>
+                <div class="div3 input__group">
+                    <label for="plate">Patente</label>
+                    <input class="input" type="text" name="plate" id="plate" required placeholder="...">
+                </div>
+                <div class="div4 input__group">
+                    <label for="user">Modelo</label>
+                    <input class="input" type="text" name="modelo" id="modelo" required placeholder="...">
+                </div>
+                <div class="div5 input__group">
+                    <label for="km">KM</label>
+                    <input class="input" type="number" name="km" id="km" required placeholder="...">
+                </div>
+                <div class="div6 input__group">
+                    <label for="state">Estado</label>
+                    <select  class="select" id="state" name="state">
+                        <option value="available">Disponible</option>
+                        <option value="sold">Vendido</option>
+                        <option value="not_available">No disponible</option>
+                        <option value="ask">Consultar</option>
+                    </select>
+                </div>
+                <div class="div7 input__group">
+                    <label for="n_key">N° Llave</label>
+                    <input class="input" type="number" name="n_key" id="n_key" required placeholder="...">
+                </div>
+                <div class="div8 input__group">
+                    <label for="color">Color</label>
+                    <select class="select" id="color" name="color">
+                        <option value="white">Blanco</option>
+                        <option value="black">Negro</option>
+                        <option value="gray">Gris</option>
+                        <option value="silver">Plateado</option>
+                        <option value="blue">Azul</option>
+                        <option value="red">Rojo</option>
+                        <option value="brown">Marrón</option>
+                        <option value="green">Verde</option>
+                        <option value="beige">Beige</option>
+                        <option value="yellow">Amarillo</option>
+                    </select>
+                </div>
+                <div class="div9 input__group date">
+                    <label for="date">Fecha de ingreso</label>
+                    <input class="input" type="date" name="date" id="date" required>
+                </div>
+                <div class="div11 input__group obs">
+                    <label for="obs">Observaciones</label>
+                    <input class="input" type="text" name="obs" id="obs" required placeholder="...">
+                </div>
+                <div class="div10 input__group">
+                    <label for="mandate">Mandato</label>
+                    <input class="input" type="text" name="mandate" id="mandate" required placeholder="...">
+                </div>
+                <div class="div12 submit__container">
+                    <button class="submit__button">Actualizar llave</button>
+                </div>
+            </div>
+        </form>
     </main>
     <script src="/script.js"></script>
 </body>
