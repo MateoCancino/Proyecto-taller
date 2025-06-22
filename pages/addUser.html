@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Favicon-->
+    <link rel="icon" href="/resources/icons/color_favicon.png" sizes="32x32" type="image/png">
+    <!--Hojas de estilos-->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="addUser.css">
+    <!--Iconos-->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <title>Añadir usuario - Sion Autocenter</title>
+</head>
+<body>
+    <header class="header__navbar">
+        <button class="menu__toggle" id="menu-toggle">
+            <span class="material-symbols-outlined" id="menu-icon">menu</span>
+        </button>    
+    <nav class="side__menu" id="side-menu">
+        <ul>
+            <li><a href="/index.html"><span class="material-symbols-outlined">search</span>Buscar vehículo</a></li>
+            <li><a href="/pages/addCar.html"><span class="material-symbols-outlined">car_tag</span>Añadir vehiculo</a></li>
+            <li><a href="/pages/updateKey.html"><span class="material-symbols-outlined">key</span>Actualizar llave</a></li>
+            <li><a href="/pages/register.html"><span class="material-symbols-outlined">history</span>Historial Consultas</a></li>
+            
+        </ul>
+    </nav>
+    </header>
+    <main class="main__content">
+        <img src="/resources/images/sion_logo.svg" alt="sion logo" class="main__logo">
+        <form action="" class="form__container">
+            <div class="parent">
+                <div class="inputs__container">
+                    <div class="input__group">
+                        <label for="user">Nombre Completo</label>
+                        <input class="input" type="text" name="username" id="user" required>
+                    </div>
+                    <div class="input__group">
+                        <label for="first__passwd">Ingrese Pin</label>
+                        <input class="input" type="password" name="first__passwd" id="first__passwd" required>
+                        
+                    </div>
+                    <div class="input__group">
+                        <label for="second__passwd">Confirme PIN </label>
+                        <input class="input"type="password" name="second__passwd" id="second__passwd" required>
+                    </div>
+                </div>
+                <div class="img__container">
+                    <label for="user__img" class="upload__label">
+                        <div class="circle">
+                            <span class="material-symbols-outlined upload-icon">library_add</span>
+                        </div>
+                        <p>Añadir foto de perfil</p>
+                    </label>
+                    <input type="file" id="user__img" accept="image/*" hidden>
+                </div>
+                <div class="submit__container">
+                    <button class="submit__button">Añadir usuario</button>
+                </div>
+            </div>
+        </form>
+    </main>
+    <script src="/script.js"></script>
+</body>
+</html>
