@@ -1,7 +1,7 @@
 :root{
     --orange_hover-color:#f0d0a3;
-    --green-color:#61bd3a;
-    --green_hover-color:#348811;
+    --blue-color:#4285F4;
+    --blue_hover-color: #5caff4;
 }
 .parent {
     margin: 0;
@@ -70,6 +70,7 @@
     margin-top: 0px;
     gap: 2px;
 }
+
 .input{
     margin: 0;
 }
@@ -90,8 +91,8 @@
     transition: all 0.3 ease;
 }
 .select:focus{
-    color: var(--orange-color);
-    border: 2px solid var(--grey-color);
+    color: var(--blue-color);
+    border: 2px solid var(--blue_hover-color);
 }
 
 .obs input{
@@ -105,14 +106,24 @@
     padding: 8px;
     font-size: 1rem;
     margin-top: 20px;
-    background-color: var(--green-color);
+    background-color: var(--blue-color);
     color: var(--white-color);
-    border: 2px solid var(--green-color);
+    border: 2px solid var(--blue-color);
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3 ease;
+    font-weight: 600;
 }
 .submit__button:hover{
-    background-color: var(--green_hover-color);
-    border: 2px solid var(--green_hover-color);
+    box-shadow: 0 0 10px var(--blue_hover-color);
+}
+/*
+@media (max-width:768px){
+    .parent{
+        display:flex;
+        flex-direction: column;
+    }
+    .div11 input{
+        width: 100%;
+    }
 }
