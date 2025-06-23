@@ -3,6 +3,7 @@
     --orange-color: #f38f04;
     --blue-color:#4285F4;
     --blue_hover-color: #5caff4;
+    --light-grey-color:#f4f3f3;
 }
 *{
     user-select: none;
@@ -13,7 +14,9 @@
     grid-template-columns: repeat(3, minmax(200px, 1fr));
     grid-template-rows: repeat(5, 1fr);
     gap: 10px;
-    padding: 10px;
+    padding: 20px;
+    background-color: var(--light-grey-color);
+    border-radius: 10px;
 }
     
 
