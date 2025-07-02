@@ -1,11 +1,13 @@
 :root{
+    --orange-color: #f38f04;
     --grey-color:#706e6f;
-    --light-grey-color:#a6a6a6;
+    --light-grey-color:#ebe9e9;
     --black-color:#000000;
     --white-color:#f6f5f5;
     --orange_hover-color:#f0d0a3;
     --blue-color:#4285F4;
     --blue_hover-color: #5caff4;
+    --green-color: #84ed4b00;
 }
 
 .form__container{
@@ -17,7 +19,10 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(6, 1fr);
-    gap: 8px;
+    gap: 8px 20px;
+    padding: 20px;
+    background-color: var(--light-grey-color);
+    border-radius: 10px;
 }
     
 .inputs__container{
@@ -43,6 +48,9 @@
     padding: 6px 12px 6px 6px;
     border-radius: 5px;
     font-size: 1rem;
+}
+.input:focus{
+    border: 2px solid var(--orange-color);
 }
 .input__group{
     display: flex;
@@ -71,7 +79,6 @@
 .circle {
     min-width: 80%;
     min-height: 80%;
-    background-color: var(--light-grey-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -80,15 +87,13 @@
     margin-top: 15px;
     border-radius: 50%;
     transition: all 0.3s ease-in;
+    border: 2px solid var(--grey-color);
 }
 
 .circle span {
     font-size: 3rem;
     color: var(--black-color); 
     transition: all 0.4s ease-in;
-}
-.circle:hover{
-    background-color: var(--grey-color);
 }
 .circle span:hover{
     font-size: 3.2rem;
@@ -99,4 +104,15 @@
     font-size: 1rem;
     cursor: pointer;
     color: var(--black-color)
+}
+@media (max-width:941px){
+    .parent{
+        display:flex;
+        flex-direction: column;
+    }
+    .circle{
+        height: 90px;
+        width: 100%;
+        border-radius: 10px;
+    }
 }

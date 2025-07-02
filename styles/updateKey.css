@@ -1,7 +1,12 @@
 :root{
     --orange_hover-color:#f0d0a3;
+    --orange-color: #f38f04;
     --blue-color:#4285F4;
     --blue_hover-color: #5caff4;
+    --light-grey-color:#f4f3f3;
+}
+*{
+    user-select: none;
 }
 .parent {
     margin: 0;
@@ -9,6 +14,9 @@
     grid-template-columns: repeat(3, minmax(200px, 1fr));
     grid-template-rows: repeat(5, 1fr);
     gap: 10px;
+    padding: 20px;
+    background-color: var(--light-grey-color);
+    border-radius: 10px;
 }
     
 
@@ -47,6 +55,9 @@
     grid-row-start: 2;
 }
 
+.div9{
+    width: 100%;
+}
 
 .div10 {
     grid-column-start: 3;
@@ -69,10 +80,13 @@
     flex-direction: column;
     margin-top: 0px;
     gap: 2px;
+    width: 100%;
 }
 
 .input{
     margin: 0;
+    width: 250px;
+    border: 2px solid var(--orange-color);
 }
 
 .input[type=number]::-webkit-inner-spin-button, 
@@ -83,7 +97,7 @@
 .select{
     font-size: 1rem;
     margin-top: 0px;
-    padding: 10px 135px 10px 15px;
+    padding: 10px;
     width: 100%;
     border-radius: 10px;
     color: var(--grey-color);
@@ -95,12 +109,23 @@
     border: 2px solid var(--blue_hover-color);
 }
 
-.obs input{
-    width: 86.5%;
+.div11 input{
+    width: 100%;
+    padding: 0;
+    padding: 10px 0 10px 0;
+    text-indent: 10px;
 }
-.date input{
-    width: 73%;
+.div9 input{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    margin-top: 0px;
+    gap: 2px;
+    width: 250px;
+    padding: 0;
+    padding: 10px;
 }
+
 .submit__button{
     width: 100%;
     padding: 8px;
@@ -117,8 +142,8 @@
 .submit__button:hover{
     box-shadow: 0 0 10px var(--blue_hover-color);
 }
-/*
-@media (max-width:768px){
+
+@media (max-width:941px){
     .parent{
         display:flex;
         flex-direction: column;
