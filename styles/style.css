@@ -135,7 +135,7 @@ html, body{
 #search{
     width: 300px;
     box-shadow: 0 0 9px var(--orange-color);
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 .input :focus{
     color: var(--black-color);
@@ -144,14 +144,22 @@ html, body{
 }
 .find__container{
     width: 100%;
-    height: auto;
+    max-height: 400px;
     margin-top: 10px;
     border-radius: 10px;
     border: 2px solid var(--orange-color);
     padding: 10px;
+    margin: 0 auto;
+    overflow: scroll;
+}
+.find__container table {
+    width: 100%;
+    height: auto;
+    border-collapse: collapse;
+    overflow-y: scroll;
 }
 .find__container th, td{
-    padding: 12px 35px;
-    text-align: left;
+    padding: 12px 30px;
+    text-align: center;
     border-bottom: 1px solid #ddd;
 }
