@@ -142,3 +142,16 @@ html, body{
     border: 2px solid var(--orange-color) !important;
     box-shadow: 0 0 10px var(--orange_hover-color);
 }
+.find__container{
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 2px solid var(--orange-color);
+    padding: 10px;
+}
+.find__container th, td{
+    padding: 12px 35px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
